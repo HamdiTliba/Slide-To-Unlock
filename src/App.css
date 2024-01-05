@@ -1,38 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration-style: none;
+  overflow: hidden;
+  font-family: sans-serif;
+}
 .App {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  margin: auto;
+}
+.subtitle {
+  font-size: 32px;
+  font-weight: 600;
+}
+.title {
+  font-size: 48px;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 30px;
+  text-align: justify;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #b0b0b0;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb:active {
+  background-color: #d5d5d5;
+  transition: all 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.unlockIcon {
+  font-size: 80px;
+  color: #b0b0b0;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease;
+}
+.unlockIcon:hover {
+  color: #808080;
+}
+.slideToUnlockScreen {
+  background-color: rgb(215, 215, 215);
+  height: 700px;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  gap: 60px;
+  border-radius: 20px;
+  border: 2px solid rgb(138, 138, 138);
 }
